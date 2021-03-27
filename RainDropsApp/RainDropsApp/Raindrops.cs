@@ -19,7 +19,7 @@ namespace RainDropsApp
             {
                 raindropString += "Plong";
             }
-            if(raindropString == "")
+            if(raindropString == "" || n == 0)
             {
                 raindropString = n.ToString();
             }

@@ -29,7 +29,7 @@ namespace RainDropsTests
         [TestCase(-70, "PlangPlong")]
         [TestCase(-105, "PlingPlangPlong")]
         [TestCase(-121550625, "PlingPlangPlong")]
-        [TestCase(-34, "34")]
+        [TestCase(-34, "-34")]
         public void WhenANegativeIntegerIsPassedToTheMethod_TheCorrectStringIsStillReturned(int num, string expectedString)
         {
             var result = Raindrops.GetRaindropsString(num);
