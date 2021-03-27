@@ -7,7 +7,6 @@ namespace RainDropsApp
         public static string GetRaindropsString(int n)
         {
             string raindropString = "";
-
             if (n % 3 == 0)
             {
                 raindropString += "Pling";
