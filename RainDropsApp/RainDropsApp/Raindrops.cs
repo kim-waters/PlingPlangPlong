@@ -37,9 +37,22 @@ namespace RainDropsApp
 
         static void Main(string[] args)
         {
-            Console.WriteLine(GetRaindropsString(28));
-            Console.WriteLine(GetRaindropsString(30));
-            Console.WriteLine(GetRaindropsString(34));
+            int inputInt;
+            bool success;
+            do
+            {
+                success = true;
+                Console.WriteLine("Enter an integer");
+                var input = Console.ReadLine();
+                if (!Int32.TryParse(input, out inputInt))
+                {
+                    Console.Clear();
+                    Console.WriteLine("Invalid input!");
+                    success = false;
+                }
+            } while (success == false);
+
+            Console.WriteLine(GetRaindropsString(inputInt));
         }
     }
 }
