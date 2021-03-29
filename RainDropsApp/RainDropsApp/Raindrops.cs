@@ -46,6 +46,7 @@ namespace RainDropsApp
                 var input = Console.ReadLine();
                 if (!Int32.TryParse(input, out inputInt))
                 {
+                    // if the user did not enter a valid integer, display an error message and ask them to input again
                     Console.Clear();
                     Console.WriteLine("Invalid input!");
                     success = false;
