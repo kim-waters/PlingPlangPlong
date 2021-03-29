@@ -14,7 +14,7 @@ namespace RainDropsTests
         [TestCase(105, "PlingPlangPlong")]
         [TestCase(121550625, "PlingPlangPlong")]
         [TestCase(34, "34")]
-        [TestCase(0, "0")]
+        [TestCase(0, "PlingPlangPlong")]
         public void WhenAValidIntegerIsPassedToTheMethod_TheCorrectStringIsReturned(int num, string expectedString)
         {
             var result = Raindrops.GetRaindropsString(num);
